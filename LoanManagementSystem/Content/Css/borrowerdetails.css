@@ -1,0 +1,6 @@
+﻿input:disabled{
+    border: none;
+    outline: none;
+    cursor: not-allowed;
+    pointer-events: fill;
+}

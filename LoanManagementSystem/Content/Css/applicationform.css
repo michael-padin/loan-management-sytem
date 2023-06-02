@@ -1,0 +1,168 @@
+﻿body {
+    color: #4e4e4e;
+}
+
+input {
+    border-radius: 10px;
+    background-color: #f0f2f5;
+    height: 50px;
+    margin-top: .2rem;
+    transition: 0.08s all ease-out;
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+    input:hover {
+        outline: 3px solid #79deb2;
+    }
+
+
+    input:focus {
+        border: 1px solid #28ac70;
+        outline: 3px solid #79deb2;
+    }
+
+
+input:disabled{
+    cursor: not-allowed;
+    outline: none!important;
+    border: none!important;
+}
+
+#termsCheckbox{
+    height: auto!important;
+    outline: none!important;
+    border: none!important;
+}
+/* Drop down list */
+#ddlBorrowers, #ddlStatus {
+    height: 50px;
+    margin-top: 0.2rem;
+    background-color: #f0f2f5;
+    border: none;
+    border-radius: 10px;
+    padding: 0 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+    #ddlBorrowers:focus, #ddlStatus:focus {
+        border: 1px solid #28ac70;
+        outline: 2px solid #48d494bc;
+    }
+
+.borrower-ddl-container, .status-ddl-container {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#lblBorrowerErr, #lblLoanIDErr, #lblAmountRequestionErr, #lblLoanTermErr,
+#lblInterestRateErr, #lblTotalLoanAmntErr, #lblPaymentPerMonthErr, #lblStartDateErr,
+#lblEndDateErr, #lblNumOfRepaymentsErr, #lbltermsCheckboxErr, #lblgeneralErr, #termsCheckboxErr {
+    color: red;
+    font-size: 12px;
+}
+
+
+.ddl-borrowers-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.dropdown-item {
+    height: 40px; /* Set the desired height */
+    line-height: 40px; /* Align the text vertically in the middle */
+    padding: 5px 10px;
+}
+/*End of  Drop down list */
+.loan-application-wrapper {
+    margin: 3rem;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #28ac70;
+    flex-direction: column;
+}
+
+
+.customer-information-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.customer-information-container {
+    margin-top: .875rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.app-input-group {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+.confirmation-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.confirmation-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+
+#chckConfirmation {
+    height: 25px;
+    width: 25px;
+    background-color: #28ac70;
+    margin: 0;
+}
+
+    #chckConfirmation:hover {
+        border: none;
+        outline: none
+    }
+
+    #chckConfirmation:focus {
+        border: none;
+        outline: none
+    }
+
+.submit-btn-container {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+#btnSubmit {
+    margin: 0;
+    background-color: #28ac70;
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+}
+
+    #btnSubmit:hover {
+        border: none;
+        outline: none;
+        background-color: #2cbb7a;
+    }

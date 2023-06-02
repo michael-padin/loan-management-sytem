@@ -1,0 +1,45 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userprefs
+*.vs/
+*.vscode/
+
+# Ignore logs and other temporary files
+*.log
+*.tmp
+
+# Ignore Visual Studio files
+*.sln
+*.csproj
+*.vbproj
+*.fsproj
+*.xproj
+*.vcxproj
+.vscode/
+
+# Ignore publish profiles
+*.pubxml
+*.publishproj
+
+# Ignore SQL Server files
+*.mdf
+*.ldf
+
+# Ignore Resharper files
+_resharper*
+
+# Ignore Node.js files
+node_modules/
+package-lock.json
+
+# Ignore webpack files
+dist/

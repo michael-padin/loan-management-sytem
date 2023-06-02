@@ -1,0 +1,136 @@
+﻿.dashboard-wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f2f5;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.sidebar-wrapper {
+    height: 100%;
+    width: 250px;
+    display: flex;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    background-color: #ffff;
+}
+
+.sidebar-container {
+    height: 100%;
+}
+
+.sidebar-logo-container {
+    padding: 2rem;
+    color: #28ac70;
+}
+
+
+.sidebar-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    border-radius: 8px;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+    .menu-item:hover {
+        background-color: #def7ec;
+    }
+
+.sidebar-menu-container {
+    height: calc(100vh - 139px);
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Menu Text*/
+.sidebar-sub-head {
+    padding: 0 0.5rem;
+    margin-bottom: .5rem;
+    color: #aaa;
+}
+
+.menu-link {
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    color: #000;
+    align-items: center;
+}
+
+/* NAVIGATION BAR*/
+.navbar-wrapper {
+    height: 89px;
+    width: 100%;
+}
+
+.navbar-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar-right-info > h2, span{
+    font-weight: 400;
+}
+
+.navbar-title{
+    font-weight: 400;
+}
+
+.circle {
+   
+    background-color: #ffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 99999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eeeaea
+}
+
+.circle > span{
+    font-size: 2rem;
+}
+
+/* END OF NAVIGATION BAR*/
+
+
+
+
+
+/* ICONS */
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+/* LOGOUT BTN*/
+.logout-btn-container {
+    display: flex;
+    padding: 0 2rem;
+    gap: 10px;
+    height: 50px;
+    align-items: center;
+}

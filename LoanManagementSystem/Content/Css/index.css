@@ -1,0 +1,246 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: #fefefe;
+    width: 100%;
+    height: 100%;
+}
+
+table{
+    font-size: 14px!important;
+}
+
+li > a {
+    color: #b673f8;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+
+.aspNetHidden {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+#btnClearSearch {
+    color: #808080;
+}
+
+
+#btnSearch, #btnClearSearch {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: 100%;
+    color: #28ac70;
+    width: 50px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    
+
+.form-wrapper, .auth-form {
+    height: 100%;
+    display: flex;
+}
+
+/* LOGO */
+.logo-container {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
+.auth-content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.left-content, .right-content {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left-content {
+    position: relative;
+}
+
+
+.left-container {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-header-container {
+    margin-bottom: 3rem;
+    width: 60%;
+}
+
+.auth-form-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+    .input-group > input {
+        padding: 1rem;
+        font-size: 1rem;
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        background-color: #f1f1f1;
+    }
+
+        .input-group > input:focus {
+            border: 1px solid #28ac70;
+            outline: 2px solid #48d494bc;
+        }
+
+        .input-group > input:hover {
+            outline: 2px solid #48d494bc;
+        }
+
+
+.right-svg-container {
+    background-color: #f0eef8;
+    margin: 1rem;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+    .right-svg-container > svg {
+        height: 80%;
+        width: 80%;
+    }
+
+/** AUTH BUTTONS  */
+
+.auth-buttons-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    .auth-buttons-container > input {
+        height: 45px;
+        border: none;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+
+
+
+    .auth-buttons-container > p > a {
+        color: #28ac70;
+        text-decoration: none;
+    }
+
+.auth-btn {
+    background-color: #28ac70;
+    color: #fff;
+}
+
+.btnDelete, .btnEdit, .btnAdd {
+    text-align: center;
+    height: 35px;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    font-size: .75rem;
+    border-radius: 5px;
+}
+
+.btnAdd{
+    background-color: #28ac70;
+    color: white;
+}
+
+.btnDelete {
+    background-color: #ffecec;
+    color: #e02828;
+}
+
+.btnEdit {
+    background-color: #e1e6ff;
+    color: #0026ff;
+    
+}
+
+
+/* latop devices layout */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .auth-form-container {
+        width: 90%;
+        gap: 1rem;
+    }
+
+    .left-header-container {
+        width: 90%;
+    }
+
+    .auth-buttons-container {
+        margin-top: 1.5rem;
+    }
+}
+
+/* CONTENT */
+.content-parent-wrapper {
+    width: calc(100% - 250px);
+    height: 100%;
+}
+
+.content-sub-wrapper {
+    height: calc(100vh - 153px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+    display: flex;
+    background-color: #ffff;
+    overflow: auto;
+    border-radius: 8px;
+}

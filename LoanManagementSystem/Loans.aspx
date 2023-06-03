@@ -69,6 +69,7 @@
                                     <Columns>
                                         <asp:TemplateField HeaderText="Actions">
                                             <ItemTemplate>
+                                                <asp:Button ID="btnPay" runat="server" Text="Pay" CssClass="btnPay" CommandName="Pay" CommandArgument='<%# Eval("LoanId") %>'  />
                                                 <asp:Button ID="btnEdit" runat="server" Text="Edit" CssClass="btnEdit" CommandName="Update" CommandArgument='<%# Eval("LoanId") %>' />
                                                 <asp:Button ID="btnDelete" runat="server" Text="Delete" CssClass="btnDelete" CommandName="Delete" CommandArgument='<%# Eval("LoanId") %>'  />
                                                 <!-- Add more buttons as needed -->
@@ -98,6 +99,13 @@
             </div>
         </div>
     </form>
+
+    <script type="text/javascript">
+        function ShowAlert(message) {
+            alert(message);
+        }
+
+    </script>
 </body>
 </html>
 

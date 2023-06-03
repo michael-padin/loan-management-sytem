@@ -40,6 +40,14 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+#lblNameErr,
+#lblEmailErr,
+#lblPasswordErr, #lblGeneralErr {
+    color: red;
+    font-size: 12px;
+}
+
+
 
 #btnClearSearch {
     color: #808080;
@@ -186,7 +194,7 @@ input::-webkit-inner-spin-button {
     color: #fff;
 }
 
-.btnDelete, .btnEdit, .btnAdd {
+.btnDelete, .btnEdit, .btnAdd, .btnPay {
     text-align: center;
     height: 35px;
     width: 50px;
@@ -197,6 +205,12 @@ input::-webkit-inner-spin-button {
 }
 
 .btnAdd{
+    background-color: #28ac70;
+    color: white;
+}
+
+
+.btnPay {
     background-color: #28ac70;
     color: white;
 }

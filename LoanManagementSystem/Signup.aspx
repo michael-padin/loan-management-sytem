@@ -12,7 +12,7 @@
         <div class="auth-content">
             <div class="left-content">
                 <div class="logo-container">
-                    <h1><a href="/">Pautang</a>  </h1>
+                    <h1><a href="/" style="text-decoration: none; color: #28ac70">PAUTANG</a>  </h1>
                 </div>
                 <div class="left-container">
                     <div class="left-header-container">
@@ -24,14 +24,17 @@
                         <div class="input-group">
                             <asp:Label ID="lblName" runat="server" Text="Your Name" ></asp:Label>
                             <asp:TextBox ID="txtName" runat="server" required="true" type="text" placeholder="Michael Padin"></asp:TextBox>
+                            <asp:Label ID="lblNameErr" runat="server" Text=""></asp:Label>
                         </div>
                         <div class="input-group">
                             <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
                             <asp:TextBox ID="txtEmail" runat="server" required="true" type="email" placeholder="michaelpadin@example.com"></asp:TextBox>
+                            <asp:Label ID="lblEmailErr" runat="server" Text=""></asp:Label>
                         </div>
                         <div class="input-group">
                             <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
                             <asp:TextBox ID="txtPassword" runat="server" type="password" required="true"  placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;"></asp:TextBox>
+                               <asp:Label ID="lblPasswordErr" runat="server" Text=""></asp:Label>
                         </div>
                         <div class="auth-buttons-container">
                             <asp:Button ID="btnRegister" runat="server" Text="Create Account" OnClick="btnRegister_Click" cssClass="auth-btn"/>

@@ -13,7 +13,7 @@
         <div class="auth-content">
             <div class="left-content">
                 <div class="logo-container">
-                    <h1><a href="/">Pautang</a>  </h1>
+                    <h1><a href="/" style="text-decoration: none; color: #28ac70">PAUTANG</a>  </h1>
                 </div>
                 <div class="left-container">
                     <div class="left-header-container">
@@ -31,6 +31,7 @@
                             <asp:TextBox ID="txtPassword" runat="server" type="password" required="true"  placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;"></asp:TextBox>
                         </div>
                         <div class="auth-buttons-container">
+                            <asp:Label ID="lblGeneralErr" runat="server" Text=""></asp:Label>
                             <asp:Button ID="btnRegister" runat="server" Text="Log in" OnClick="btnLogin_Click" cssClass="auth-btn"/>
                             <p>Don't have an account? <a href="Signup">Sign up</a></p>
                         </div>

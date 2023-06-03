@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 public partial class Loans : System.Web.UI.Page
 {
 
-    string connectionString = "Data Source=DESKTOP-TDH7QKT\\SQLEXPRESS;Initial Catalog=LoanManagementSystem;Persist Security Info=True;User ID=user;Password=user";
+    string connectionString = "Data Source=DESKTOP-J4A1LCO\\SQLEXPRESS;Initial Catalog=LoanManagementSystem;User ID=user;Password=user";
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -108,6 +108,27 @@ public partial class Loans : System.Web.UI.Page
             if (reader.Read())
             {
                 Response.Redirect("EditLoan.aspx?loanId="+ loanId);
+            }
+            else
+            {
+                return;
+            }
+        } else if(e.CommandName == "Pay")
+        {
+            string query = "SELECT * FROM Loans WHERE LoanID = @loanId";
+
+            // Perform update operation
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(query, con);
+
+            cmd.Parameters.AddWithValue("@loanId", loanId);
+            con.Open();
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                Response.Redirect("PaymentForm.aspx?loanId=" + loanId);
             }
             else
             {

@@ -8,11 +8,13 @@ using System.Web.UI.WebControls;
 
 public partial class PaymentForm : System.Web.UI.Page
 {
-    string connectionString = "Data Source=DESKTOP-TDH7QKT\\SQLEXPRESS;Initial Catalog=LoanManagementSystem;Persist Security Info=True;User ID=user;Password=user";
+    string connectionString = "Data Source=DESKTOP-J4A1LCO\\SQLEXPRESS;Initial Catalog=LoanManagementSystem;User ID=user;Password=user";
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {
+
+            txtPaymentID.Text = GenerateUniqueNumber();
             BindPayment();
             
         }
@@ -20,7 +22,6 @@ public partial class PaymentForm : System.Web.UI.Page
 
     protected void BindPayment()
     {
-        txtPaymentID.Text = GenerateUniqueNumber();
         string loanID = Request.QueryString["loanId"];
         txtLoanID.Text = loanID;
 
@@ -142,16 +143,16 @@ public partial class PaymentForm : System.Web.UI.Page
 
 
     protected void btnSubmt_Click(object sender, EventArgs e) {
-        
+
         string loanId = txtLoanID.Text;
         string paymentId = txtPaymentID.Text;
-        string borrowerId= txtBorrowerID.Text;
-        
+        string borrowerId = txtBorrowerID.Text;
+
 
         bool hasErr = false;
-       
 
-        if(string.IsNullOrEmpty(loanId) || string.IsNullOrEmpty(paymentId) || string.IsNullOrEmpty(txtPaymentDate.Text) || string.IsNullOrEmpty(txtPaymentAmount.Text) || string.IsNullOrEmpty(borrowerId))
+
+        if (string.IsNullOrEmpty(loanId) || string.IsNullOrEmpty(paymentId) || string.IsNullOrEmpty(txtPaymentDate.Text) || string.IsNullOrEmpty(txtPaymentAmount.Text) || string.IsNullOrEmpty(borrowerId))
         {
             lblGeneralErr.Text = "Input fields cannot be empty";
             hasErr = true;
@@ -160,6 +161,30 @@ public partial class PaymentForm : System.Web.UI.Page
         {
             lblGeneralErr.Text = "";
         }
+
+        string query = "SELECT * FROM Loans WHERE LoanID = @loanId";
+
+        // Perform update operation
+        SqlConnection con1 = new SqlConnection(connectionString);
+        SqlCommand cmd0 = new SqlCommand(query, con1);
+
+        cmd0.Parameters.AddWithValue("@loanId", loanId);
+        con1.Open();
+
+        SqlDataReader reader = cmd0.ExecuteReader();
+
+        if (reader.Read())
+        {
+            if (reader["Status"].ToString() == "rejected")
+            {
+                lblGeneralErr.Text = "Can't make payments because status is rejected!";
+                return;
+            }
+        }
+
+        reader.Close();
+        con1.Close();
+     
 
         if (hasErr) return;
 

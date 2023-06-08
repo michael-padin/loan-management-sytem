@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 public partial class fonts_Login : System.Web.UI.Page
 {
-    string connectionString = "Data Source=DESKTOP-TDH7QKT\\SQLEXPRESS;Initial Catalog=LoanManagementSystem;Persist Security Info=True;User ID=user;Password=user";
+    string connectionString = "Data Source=DESKTOP-J4A1LCO\\SQLEXPRESS;Initial Catalog=LoanManagementSystem;User ID=user;Password=user";
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -22,7 +22,7 @@ public partial class fonts_Login : System.Web.UI.Page
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             // Prepare the SQL query to validate the login credentials
-            string query = "SELECT COUNT(*) FROM [User] WHERE Email = @Email AND Password = @Password";
+            string query = "SELECT COUNT(*) FROM [Users] WHERE Email = @Email AND Password = @Password";
 
             // Create a command with the query and connection
             using (SqlCommand command = new SqlCommand(query, connection))

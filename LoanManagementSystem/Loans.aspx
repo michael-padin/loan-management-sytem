@@ -99,6 +99,13 @@
             </div>
         </div>
     </form>
+
+    <script type="text/javascript">
+        function ShowAlert(message) {
+            alert(message);
+        }
+
+    </script>
 </body>
 </html>
 

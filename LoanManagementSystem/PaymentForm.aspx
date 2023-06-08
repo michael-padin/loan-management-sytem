@@ -71,7 +71,7 @@
                                 <div class="submit-btn-container">
                                     <asp:Button ID="btnSubmit" runat="server" Text="Add Payment" OnClick="btnSubmt_Click" />
                                     <div class="back-container">
-                                        <a href="/Payments">Cancel
+                                        <a href="/Loans">Cancel
                                         </a>
                                     </div>
                                 </div>

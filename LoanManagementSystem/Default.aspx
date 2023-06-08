@@ -6,14 +6,13 @@
 <head runat="server">
     <link rel="stylesheet" href="Content/Css/landing.css" type ="text/css"/>
     <link rel="stylesheet" href="Content/Css/index.css" type ="text/css"/>
-    <title>Marsha Utang Company</title>
+    <title>Loan Management System</title>
 </head>
 <body>
     <nav>
         <div class="navbar__wrapper">
             <div class="navbar-container">
-                <a href="Home">Home</a>
-                <a href="Features">Features</a>
+                <a href="/">Home</a>
             </div>
 
             <div class="navbar__auth">
@@ -35,8 +34,10 @@
                     You can do it with confidence if you follow our advice and use our tools. Our website provides complete loan management solutions.
                 </p>
 
-                <div class="apply-btn-container">
-                    <button class="apply-btn">Apply now  </button>
+                <div class="apply-btn-container" style="cursor: pointer;">
+                    <a href="/Signup" style="cursor: pointer;">
+                        <button class="apply-btn" style="cursor: pointer;">Explore now  </button>
+                    </a>
                 </div>
 
             </div>

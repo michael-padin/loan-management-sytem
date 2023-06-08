@@ -113,6 +113,27 @@ public partial class Loans : System.Web.UI.Page
             {
                 return;
             }
+        } else if(e.CommandName == "Pay")
+        {
+            string query = "SELECT * FROM Loans WHERE LoanID = @loanId";
+
+            // Perform update operation
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(query, con);
+
+            cmd.Parameters.AddWithValue("@loanId", loanId);
+            con.Open();
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                Response.Redirect("PaymentForm.aspx?loanId=" + loanId);
+            }
+            else
+            {
+                return;
+            }
         }
 
 

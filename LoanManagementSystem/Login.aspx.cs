@@ -22,7 +22,7 @@ public partial class fonts_Login : System.Web.UI.Page
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             // Prepare the SQL query to validate the login credentials
-            string query = "SELECT COUNT(*) FROM [Users] WHERE Email = @Email AND Password = @Password";
+            string query = "SELECT * FROM Users WHERE Email = @Email AND Password = @Password";
 
             // Create a command with the query and connection
             using (SqlCommand command = new SqlCommand(query, connection))
@@ -35,10 +35,16 @@ public partial class fonts_Login : System.Web.UI.Page
                 connection.Open();
 
                 // Execute the query and get the result
-                int count = (int)command.ExecuteScalar();
+                SqlDataReader reader = command.ExecuteReader();
 
                 // Check if a matching record was found
-                isValid = (count > 0);
+                if (reader.Read())
+                {
+                    Session["FullName"] = reader["Name"] as string;
+                    Session["Email"] = reader["Email"] as string;
+                    isValid  = true; 
+                }
+                
 
                 // Close the database connection
                 connection.Close();

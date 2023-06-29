@@ -8,8 +8,12 @@
     <div class="navbar-right">
         <div class="circle"><span>M</span> </div>
         <div class="navbar-right-info">
-            <h2>Michael Padin</h2>
-            <span>ID</span> 78945247
+            <div style ="display: flex;">
+                <h1>Hi &nbsp</h1>
+            <asp:Label ID="lblFullName" runat="server" Text="" Style="font-size: 2rem;"></asp:Label>
+
+            </div>
+            <asp:Label ID="lblEmail" runat="server" Text=""></asp:Label>
         </div>
     </div>
 </div>

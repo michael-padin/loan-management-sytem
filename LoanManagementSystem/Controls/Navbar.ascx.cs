@@ -11,5 +11,9 @@ public partial class Navbar : System.Web.UI.UserControl
     protected void Page_Load(object sender, EventArgs e)
     {
         LiteralTitle.Text = Title;
+
+        lblFullName.Text = Session["FullName"].ToString();
+        lblEmail.Text = Session["email"].ToString();
+
     }
 }

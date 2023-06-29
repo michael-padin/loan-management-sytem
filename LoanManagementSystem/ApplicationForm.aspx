@@ -169,7 +169,7 @@
             // Calculate the total loan amount
             const totalLoanAmount = principal + totalInterest || principal || 0;
 
-            // Set the result in the TotalLoanAmountTextBox
+            // Set the result in the txtTotalLoanAmnt
             document.getElementById("txtTotalLoanAmnt").value = totalLoanAmount.toFixed(2);
         }
 

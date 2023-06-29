@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 public partial class Signup : System.Web.UI.Page
 {
-    string connectionString = "Data Source=DESKTOP-J4A1LCO\\SQLEXPRESS;Initial Catalog=LoanManagementSystem;User ID=user;Password=user";
+    string connectionString = "Data Source=DESKTOP-TDH7QKT\\SQLEXPRESS;Initial Catalog=LoanManagementSystem;Persist Security Info=True;User ID=user;Password=user";
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -68,7 +68,7 @@ public partial class Signup : System.Web.UI.Page
             lblEmailErr.Text = "Email already exist!";
             return;
         }
-        reader.Close();
+
 
         string query = "INSERT INTO Users (Name, Email, Password) VALUES (@name, @email, @password)";
 

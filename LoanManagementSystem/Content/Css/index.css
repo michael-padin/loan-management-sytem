@@ -42,7 +42,11 @@ input::-webkit-inner-spin-button {
 
 #lblNameErr,
 #lblEmailErr,
+<<<<<<< HEAD
+#lblPasswordErr{
+=======
 #lblPasswordErr, #lblGeneralErr {
+>>>>>>> 591f2001c04ee7d1a91414da85135df79f1db1ef
     color: red;
     font-size: 12px;
 }

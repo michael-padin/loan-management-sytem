@@ -9,23 +9,6 @@
         <span class="sidebar-sub-head">Main Menu</span>
         <ul class="sidebar-menu">
             <li class="menu-item">
-                <a href="/Dashboard" class="menu-link">
-                    <span class="icon-container">
-                        <?xml version="1.0" encoding="utf-8" ?>
-                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                        <svg fill="#000000" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg" id="dashboard" class="icon glyph">
-                            <rect x="2" y="2" width="9" height="11" rx="2"></rect>
-                            <rect x="13" y="2" width="9" height="7" rx="2"></rect>
-                            <rect x="2" y="15" width="9" height="7" rx="2"></rect>
-                            <rect x="13" y="11" width="9" height="11" rx="2"></rect>
-                        </svg>
-                    </span>
-                    Dashboard
-
-                </a>
-            </li> -->
-            <li class="menu-item">
                 <a href="/Borrowers" class="menu-link"><span class="icon-container">
                     <?xml version="1.0" encoding="utf-8" ?>
 
@@ -117,16 +100,16 @@
                 <a href="/ApplicationForm" class="menu-link">
                     <?xml version="1.0" encoding="utf-8" ?>
                     <span class="icon-container">
-                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                    <svg viewBox="0 0 52 52"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <rect fill="none" height="4.8" rx="1.6" width="27.2" x="12.4" y="26" />
-                        <rect fill="none" height="4.8" rx="1.6" width="24" x="12.4" y="35.6" />
-                        <g>
-                            <path d="m36.4 14.8h8.48a1.09 1.09 0 0 0 1.12-1.12 1 1 0 0 0 -.32-.8l-10.56-10.56a1 1 0 0 0 -.8-.32 1.09 1.09 0 0 0 -1.12 1.12v8.48a3.21 3.21 0 0 0 3.2 3.2z" />
-                            <path d="m44.4 19.6h-11.2a4.81 4.81 0 0 1 -4.8-4.8v-11.2a1.6 1.6 0 0 0 -1.6-1.6h-16a4.81 4.81 0 0 0 -4.8 4.8v38.4a4.81 4.81 0 0 0 4.8 4.8h30.4a4.81 4.81 0 0 0 4.8-4.8v-24a1.6 1.6 0 0 0 -1.6-1.6zm-32-1.6a1.62 1.62 0 0 1 1.6-1.55h6.55a1.56 1.56 0 0 1 1.57 1.55v1.59a1.63 1.63 0 0 1 -1.59 1.58h-6.53a1.55 1.55 0 0 1 -1.58-1.58zm24 20.77a1.6 1.6 0 0 1 -1.6 1.6h-20.8a1.6 1.6 0 0 1 -1.6-1.6v-1.57a1.6 1.6 0 0 1 1.6-1.6h20.8a1.6 1.6 0 0 1 1.6 1.6zm3.2-9.6a1.6 1.6 0 0 1 -1.6 1.63h-24a1.6 1.6 0 0 1 -1.6-1.6v-1.6a1.6 1.6 0 0 1 1.6-1.6h24a1.6 1.6 0 0 1 1.6 1.6z" />
-                        </g>
-                    </svg>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg viewBox="0 0 52 52"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect fill="none" height="4.8" rx="1.6" width="27.2" x="12.4" y="26" />
+                            <rect fill="none" height="4.8" rx="1.6" width="24" x="12.4" y="35.6" />
+                            <g>
+                                <path d="m36.4 14.8h8.48a1.09 1.09 0 0 0 1.12-1.12 1 1 0 0 0 -.32-.8l-10.56-10.56a1 1 0 0 0 -.8-.32 1.09 1.09 0 0 0 -1.12 1.12v8.48a3.21 3.21 0 0 0 3.2 3.2z" />
+                                <path d="m44.4 19.6h-11.2a4.81 4.81 0 0 1 -4.8-4.8v-11.2a1.6 1.6 0 0 0 -1.6-1.6h-16a4.81 4.81 0 0 0 -4.8 4.8v38.4a4.81 4.81 0 0 0 4.8 4.8h30.4a4.81 4.81 0 0 0 4.8-4.8v-24a1.6 1.6 0 0 0 -1.6-1.6zm-32-1.6a1.62 1.62 0 0 1 1.6-1.55h6.55a1.56 1.56 0 0 1 1.57 1.55v1.59a1.63 1.63 0 0 1 -1.59 1.58h-6.53a1.55 1.55 0 0 1 -1.58-1.58zm24 20.77a1.6 1.6 0 0 1 -1.6 1.6h-20.8a1.6 1.6 0 0 1 -1.6-1.6v-1.57a1.6 1.6 0 0 1 1.6-1.6h20.8a1.6 1.6 0 0 1 1.6 1.6zm3.2-9.6a1.6 1.6 0 0 1 -1.6 1.63h-24a1.6 1.6 0 0 1 -1.6-1.6v-1.6a1.6 1.6 0 0 1 1.6-1.6h24a1.6 1.6 0 0 1 1.6 1.6z" />
+                            </g>
+                        </svg>
                     </span>
                     <span>Application Form</span>
                 </a>
@@ -144,25 +127,16 @@
                     </svg>
                 </span>Payments</a>
             </li>
-          
-            <!-- <li class="menu-item">
-                    <?xml version="1.0" encoding="utf-8" ?>
-                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 36 36">
-                        <rect x="6.48" y="18" width="5.76" height="11.52" rx="1" ry="1" />
-                        <rect x="15.12" y="6.48" width="5.76" height="23.04" rx="1" ry="1" />
-                        <rect x="23.76" y="14.16" width="5.76" height="15.36" rx="1" ry="1" />
-                    </svg></span>Reports</a>
-            </li>
-            </li> -->
+
+
             <li class="menu-item">
                 <a href="/" class="menu-link">
-                   <span class="icon-container">
-                    <svg fill="currentColor"  viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>Account Settings</title>
-                        <path d="M9.6,3.32a3.86,3.86,0,1,0,3.86,3.85A3.85,3.85,0,0,0,9.6,3.32M16.35,11a.26.26,0,0,0-.25.21l-.18,1.27a4.63,4.63,0,0,0-.82.45l-1.2-.48a.3.3,0,0,0-.3.13l-1,1.66a.24.24,0,0,0,.06.31l1,.79a3.94,3.94,0,0,0,0,1l-1,.79a.23.23,0,0,0-.06.3l1,1.67c.06.13.19.13.3.13l1.2-.49a3.85,3.85,0,0,0,.82.46l.18,1.27a.24.24,0,0,0,.25.2h1.93a.24.24,0,0,0,.23-.2l.18-1.27a5,5,0,0,0,.81-.46l1.19.49c.12,0,.25,0,.32-.13l1-1.67a.23.23,0,0,0-.06-.3l-1-.79a4,4,0,0,0,0-.49,2.67,2.67,0,0,0,0-.48l1-.79a.25.25,0,0,0,.06-.31l-1-1.66c-.06-.13-.19-.13-.31-.13L19.5,13a4.07,4.07,0,0,0-.82-.45l-.18-1.27a.23.23,0,0,0-.22-.21H16.46M9.71,13C5.45,13,2,14.7,2,16.83v1.92h9.33a6.65,6.65,0,0,1,0-5.69A13.56,13.56,0,0,0,9.71,13m7.6,1.43a1.45,1.45,0,1,1,0,2.89,1.45,1.45,0,0,1,0-2.89Z" />
-                    </svg></span>Account</a>
+                    <span class="icon-container">
+                        <svg fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Account Settings</title>
+                            <path d="M9.6,3.32a3.86,3.86,0,1,0,3.86,3.85A3.85,3.85,0,0,0,9.6,3.32M16.35,11a.26.26,0,0,0-.25.21l-.18,1.27a4.63,4.63,0,0,0-.82.45l-1.2-.48a.3.3,0,0,0-.3.13l-1,1.66a.24.24,0,0,0,.06.31l1,.79a3.94,3.94,0,0,0,0,1l-1,.79a.23.23,0,0,0-.06.3l1,1.67c.06.13.19.13.3.13l1.2-.49a3.85,3.85,0,0,0,.82.46l.18,1.27a.24.24,0,0,0,.25.2h1.93a.24.24,0,0,0,.23-.2l.18-1.27a5,5,0,0,0,.81-.46l1.19.49c.12,0,.25,0,.32-.13l1-1.67a.23.23,0,0,0-.06-.3l-1-.79a4,4,0,0,0,0-.49,2.67,2.67,0,0,0,0-.48l1-.79a.25.25,0,0,0,.06-.31l-1-1.66c-.06-.13-.19-.13-.31-.13L19.5,13a4.07,4.07,0,0,0-.82-.45l-.18-1.27a.23.23,0,0,0-.22-.21H16.46M9.71,13C5.45,13,2,14.7,2,16.83v1.92h9.33a6.65,6.65,0,0,1,0-5.69A13.56,13.56,0,0,0,9.71,13m7.6,1.43a1.45,1.45,0,1,1,0,2.89,1.45,1.45,0,0,1,0-2.89Z" />
+                        </svg></span>Account</a>
             </li>
         </ul>
     </div>
@@ -178,6 +152,5 @@
         </ul>
     </div>
     <div class="logout-btn-container">
-        
     </div>
 </div>
